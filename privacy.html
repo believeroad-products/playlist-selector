@@ -1,103 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>プライバシーポリシー | YT Playlist Selector</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>プライバシーポリシー | YT Playlist Selector for AIBOX</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.8;
-      padding: 24px;
-      max-width: 900px;
-      margin: auto;
+    :root {
+      --bg: #0b0b0f;
+      --card: #141420;
+      --text: #e9e9ee;
+      --muted: #b9bac7;
+      --border: rgba(255,255,255,.12);
+      --link: #7db2ff;
+      --accent: #ffffff;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 14px;
     }
-    h1 { font-size: 1.8em; }
-    h2 { font-size: 1.3em; margin-top: 2em; }
-    p { margin: 0.8em 0; }
-    ul { margin-left: 1.2em; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+    a { color: var(--link); }
+    a:hover { opacity: .9; }
+    header {
+      padding: 28px 16px 10px;
+    }
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 16px 56px;
+    }
+    .brand {
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: .02em;
+      margin: 0 0 6px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 14px;
+      letter-spacing: .01em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px 18px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 22px 0 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    h2:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+    ol, ul { margin: 8px 0 8px 22px; }
+    li { margin: 6px 0; }
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border);
+    }
+    .contact {
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 14px;
+      margin-top: 10px;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 12px;
+      padding: 18px 16px 32px;
+      text-align: center;
+    }
+    code {
+      background: rgba(255,255,255,.06);
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,.08);
+    }
   </style>
 </head>
+
 <body>
+  <header class="container">
+    <p class="brand">YT Playlist Selector for AIBOX</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">運営主体：ビリーブロード株式会社</p>
+  </header>
 
-<h1>プライバシーポリシー</h1>
+  <main class="container">
+    <section class="card" aria-label="Privacy Policy">
+      <p>
+        ビリーブロード株式会社（以下「当社」）は、当社が提供する Android アプリケーション
+        <strong>「YT Playlist Selector for AIBOX」</strong>（以下「本アプリ」）における、
+        ユーザーの個人情報および関連情報の取扱いについて、以下のとおりプライバシーポリシーを定めます。
+      </p>
 
-<p>
-本プライバシーポリシーは、「YT Playlist Selector for AIBOX」（以下「本アプリ」）における、
-ユーザー情報の取り扱いについて定めるものです。
-</p>
+      <h2 id="section-1">1. 取得する情報について</h2>
+      <p>当社は、本アプリの提供にあたり、以下の情報を取得する場合があります。</p>
+      <ol>
+        <li>
+          <strong>再生リストに関する情報</strong><br />
+          ユーザーが本アプリに登録した再生リストの ID、タイトル、サムネイル情報等
+        </li>
+        <li>
+          <strong>ユーザー識別子（UID）</strong><br />
+          Firebase Authentication により発行されるユーザー識別子<br />
+          ※ Google アカウント認証を利用した場合に限ります
+        </li>
+        <li>
+          <strong>利用状況に関する技術情報</strong><br />
+          クラッシュ情報等、本アプリの品質向上を目的とした技術的情報<br />
+          （個人を直接特定する情報は含まれません）
+        </li>
+      </ol>
+      <p>
+        なお、本アプリは通常の利用において Google アカウントによるログインを必須としていません。<br />
+        Google アカウント認証は、クラウドバックアップおよび復元機能を利用する場合にのみ使用されます。
+      </p>
 
-<h2>1. 取得する情報</h2>
-<p>本アプリでは、以下の情報を取得する場合があります。</p>
-<ul>
-  <li>
-    YouTube Data API を通じて取得される情報<br>
-    （再生リスト名、サムネイル画像、動画ID 等）
-  </li>
-  <li>
-    Firebase Authentication による Google アカウント認証情報
-    （ユーザー識別子）
-  </li>
-  <li>
-    Firebase Firestore に保存される、
-    再生リスト管理およびクラウドバックアップ／復元のためのデータ
-  </li>
-  <li>
-    Google Play Billing による購入状態に関する情報
-  </li>
-</ul>
-<p>
-※ クレジットカード番号等の決済情報は、
-本アプリでは取得・保持しません。
-</p>
+      <h2 id="section-2">2. 情報の利用目的</h2>
+      <p>当社は、取得した情報を以下の目的の範囲内で利用します。</p>
+      <ul>
+        <li>本アプリの機能提供および動作改善のため</li>
+        <li>再生リスト情報のクラウドバックアップおよび端末間同期のため</li>
+        <li>不具合調査および品質向上のための分析のため</li>
+      </ul>
+      <p>当社は、取得した情報を広告配信やマーケティング目的で利用することはありません。</p>
 
-<h2>2. 情報の利用目的</h2>
-<p>取得した情報は、以下の目的にのみ利用します。</p>
-<ul>
-  <li>本アプリの機能提供および動作のため</li>
-  <li>再生リスト管理機能の提供</li>
-  <li>クラウドバックアップ／復元機能の提供</li>
-  <li>有料プランの提供および購入状態の確認</li>
-  <li>アプリの品質向上および不具合対応のため</li>
-</ul>
+      <h2 id="section-3">3. Firebase および Google サービスの利用について</h2>
+      <p>本アプリでは、以下の Google LLC が提供するサービスを利用しています。</p>
+      <ul>
+        <li>
+          <strong>Firebase（Firestore / Authentication）</strong><br />
+          再生リスト情報のクラウドバックアップおよびユーザー識別のために利用します。<br />
+          Firebase を通じて取得・保存される情報は、Google のプライバシーポリシーに基づき管理されます。
+        </li>
+        <li>
+          <strong>Google Play Billing（サブスクリプション課金）</strong><br />
+          本アプリの有料機能は、Google Play が提供するサブスクリプション課金機能を通じて提供されます。<br />
+          課金に関する情報（支払い情報等）は Google Play により管理され、当社がこれらの情報を取得または保持することはありません。
+        </li>
+      </ul>
 
-<h2>3. 情報の第三者提供</h2>
-<p>
-本アプリは、取得した情報を以下の場合を除き、
-第三者に提供することはありません。
-</p>
-<ul>
-  <li>法令に基づき開示が必要な場合</li>
-  <li>ユーザー本人の同意がある場合</li>
-</ul>
+      <h2 id="section-4">4. 第三者への提供について</h2>
+      <p>当社は、以下の場合を除き、取得した情報を第三者に提供することはありません。</p>
+      <ul>
+        <li>法令に基づく場合</li>
+        <li>本アプリの機能提供に必要な範囲で、Google LLC（Firebase、Google Play 等）に提供する場合</li>
+      </ul>
 
-<h2>4. 外部サービスの利用</h2>
-<p>本アプリは、以下の外部サービスを利用しています。</p>
-<ul>
-  <li>YouTube Data API</li>
-  <li>Firebase Authentication</li>
-  <li>Firebase Firestore</li>
-  <li>Google Play Billing</li>
-</ul>
-<p>
-各サービスにおける情報の取り扱いについては、
-それぞれの提供者が定めるプライバシーポリシーをご確認ください。
-</p>
+      <h2 id="section-5">5. 情報の管理および保存期間</h2>
+      <p>
+        当社は、取得した情報について、適切な安全管理措置を講じ、<br />
+        不正アクセス、漏洩、改ざん等の防止に努めます。
+      </p>
+      <p>取得した情報は、利用目的を達成するために必要な期間に限り保存されます。</p>
 
-<h2>5. プライバシーポリシーの変更</h2>
-<p>
-本ポリシーの内容は、必要に応じて変更されることがあります。
-変更後の内容は、Web 上に掲載した時点で有効となります。
-</p>
+      <h2 id="section-6">6. プライバシーポリシーの変更について</h2>
+      <p>
+        当社は、必要に応じて本プライバシーポリシーの内容を変更することがあります。<br />
+        変更後のプライバシーポリシーは、本ページに掲載された時点で効力を生じるものとします。
+      </p>
 
-<h2>6. お問い合わせ</h2>
-<p>
-本ポリシーに関するお問い合わせは、以下までご連絡ください。
-</p>
-<p>
-メールアドレス：support@example.com
-</p>
+      <h2 id="section-7">7. お問い合わせ先</h2>
+      <p>本プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+      <div class="contact">
+        <div><strong>ビリーブロード株式会社</strong></div>
+        <div>メールアドレス：<a href="mailto:yt-playlist-selector@believeroad.co.jp">yt-playlist-selector@believeroad.co.jp</a></div>
+      </div>
 
+      <h2 id="section-8">8. 制定日</h2>
+      <p>
+        制定日：<strong>2026年◯月◯日</strong><br />
+        <span class="note">※ 公開日（実際に掲載を開始した日付）に置き換えてください。</span>
+      </p>
+
+      <p class="note">
+        本ページは GitHub Pages 等で公開することを想定した簡易HTMLです。必要に応じてデザインのみ調整しても、
+        本文の趣旨（運営主体・取得情報・利用目的・第三者提供・問い合わせ先）は維持してください。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © ビリーブロード株式会社
+  </footer>
 </body>
 </html>
